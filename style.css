@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+html,body{
+    width: 100%;
+    position: relative;
+    padding: 0px;
+    margin:0px;
+    top:0px;
+    overflow-x:hidden;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+.header{
+    position:relative;
+    top:-30;
+    background: #FFFFFF;
+    width: 100%;
+
+    height: auto;
+   
+}
+
+.logo{
+    position: relative;
+    left: 36.98%;
+    right: 36.98%;
+    top: 0.83%;
+    margin-top:40px;
+    padding-bottom:10px;
+    background-image: url("res/LOGO.png");
+    background-repeat: no-repeat;
+    height: 84.2px;
+    width: 500px;
+}
+
+    .nav{
+    position: relative;
+    width:100%;
+    margin:auto;
+    top: 0.2%;
+    padding-bottom:7px;
+
+    }
+
+    input[type=text] {
+        padding-left: 25px; 
+        padding-bottom:3px;
+  }
+
+    .search{
+        position: relative;
+        top:101px;
+        left: 7.4%;
+       
+        background-image:url("res/search-2903.svg");
+        background-size:21px 21px;
+        background-repeat: no-repeat;
+        background-position:inherit;
+       
+        
+         
+    }
+
+    .right__section-likes{
+        position: absolute;
+        top:55%;
+        right: 11.04%;
+        background-image:url("res/wishlist.png");
+        background-size:auto;
+        background-repeat: no-repeat;
+        width: 28px;
+        height: 36px;
+    }
+
+    .right__section-cart{
+        position: absolute;
+        top:51%;
+        right: 8.14%;
+        background-image:url("res/cart.png");
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 27.24px;
+        height: 34.34px;
+    }
+
+   
+   
+
+    .search__line{
+        font-family: 'Work Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        width: 214px;
+        border: 0;
+        border-bottom: 2px solid gray;
+        outline: 0;
+        font-size: 1.3rem;
+        padding:0;
+        color: white;
+        background: transparent;
+    }
+
+    
+
+
+    li:hover{
+        color:#E0FF04;
+        cursor:hand;
+    }
+    
+
+    .search__line:focus{
+        border-bottom: 2px solid #E0FF04;
+        color:black;
+    }
+
+    ul{
+        list-style-type: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    .nav__font{
+        font-family: 'Work Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        /* identical to box height */
+
+    }
+    .nav__category{
+        position: absolute;
+        left: 16.72%;
+       /* right: 75.16%; */
+        top: 3.14%;
+        
+    }
+    .nav__brand{
+        position: absolute;
+        left: 31.88%;
+        /* right: 61.46%; */
+        top: 3.14%;
+        
+    }
+    .nav__collection{
+        position: absolute;
+        left: 45%;
+       /* right: 45.94%; */
+        top: 3.14%;
+        
+    }
+    .nav__about{
+        position: absolute;
+        left: 60.94%;
+        /* right: 32.6%; */
+        top: 3.14%;
+        
+    }
+    .nav__shop{
+        position: absolute;
+        left: 75.73%;
+       /* right: 18.54%; */
+        top: 3.14%;
+        bottom: 96.47%;
+    }
+
+    .right__section{
+        position: absolute;
+        top:54%;
+        right: 15.44%;
+        
+       
+    }
+
+    .right__section-fix{
+        margin-left:10px;
+        margin-right:10px;
+        font-size:13px;
+    }
+
+    
+
+    .right__section a{
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .section__1{
+        background-image: url("res/photo1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top:12px;
+        height: 930px;
+        padding:0px;
+        margin-left:0px;
+        margin-right: 0px;
+        
+    }
+
+   
+
+    .section__1 .splash{
+        position: absolute;
+        top: 43%;
+        left: 49.32%;
+        background-image: url("res/banner.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        Width:765.38px;
+        Height: 128.88px;
+       
+        
+        
+    }
+    
+    .banner-text{
+        position: absolute;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        right: 1%;
+        top: 117%;
+        cursor:pointer;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        white-space: nowrap;
+        background-image: url("res/Trazado\ 13.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        
+        padding-right:35px;
+        
+        height: 24px;
+    }
+
+    .section__2{
+        width:100%;
+        height: 112px;
+        background: #E0FF04;
+        position: relative;
+       
+    }
+
