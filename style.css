@@ -347,7 +347,7 @@ html,body{
     
 
     .outfit-container .product__like{
-      background-image:url('res/wishlist.png');
+      background-image:url('res/e_heart.svg');
       background-repeat: no-repeat;
       position: absolute;
       margin-left: 335px;
