@@ -305,12 +305,14 @@ html,body{
         padding: 0 34.52px;
     }
 
+  
 
 
-    .shop-clothes{
+
+    .shop-clothes,.shop-clothes2{
         position:relative;
-        width: 77%;
-        height: 480px;
+        width: 80%;
+        height: 450px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -319,13 +321,70 @@ html,body{
         justify-content: space-between;
     }
 
+    .shop-clothes2{
+        width: 76% !important;
+    }
+
     .outfit-container{
-        height: 480px;
+        height: 450px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+    .arrow-left{
+        position: absolute;
+        top:25%;
+        left: -8%;
+        background-image:url("res/arrow_left.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1.5%;
+        height: 8.0%;
+        max-width: 100%;
+    }
+
+
+
+    .arrow-right{
+        position: absolute;
+        top:25%;
+        right: -9%;
+        background-image:url("res/arrow_right.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1.5%;
+        height: 8.0%;
+        max-width: 100%;
+    }
+
+
+    .arrow-left1{
+        position: absolute;
+        top:25%;
+        left: -5.5%;
+        background-image:url("res/arrow_left.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1.5%;
+        height: 8.0%;
+        max-width: 100%;
+    }
+
+
+
+    .arrow-right1{
+        position: absolute;
+        top:25%;
+        right: -6%;
+        background-image:url("res/arrow_right.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 1.5%;
+        height: 8.0%;
+        max-width: 100%;
     }
 
     .wrap{
