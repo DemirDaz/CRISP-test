@@ -276,11 +276,32 @@
     </div>
     
     <div class="footer">
-        <div class="footer__logo"></div>
+        <div class="col">
+            <div class="footer__logo"></div>
             
-        <div class="footer__nav"></div>
+                 <div class="footer__nav">
+                <ul>
+                <li class=""><a href="#">ABOUT</a></li>
+                
+                <li class=""><a href="#">TERMS & CONDITIONS</a></li>
+                <li class=""><a href="#">PRIVACY POLICY</a></li>
+                
+                <li class=""><a href="#">CONTACT US</a></li>
+                </ul>
+                </div>
+        </div>
 
-        <div class="footer__form"></div>
+        <div class="col">
+        <div class="footer__form">
+            <form action="/newsletter_signup.php">
+                <label for="femail">SIGN UP FOR OUR NEWSLETTER</label><br>
+                <input type="text" id="femail" name="femail" value=""><br>
+                <input type="checkbox"  id="fcheckbox" name="fcheckbox" value="true"><span class="check">GDPR tick box GDPR tick box GDPR tick box GDPR tick box GDPR tick box</span></input><br>
+                <br>
+                <input type="submit" value="SUBMIT >">
+              </form>
+        </div>
+        </div>
 
     </div>
 </body>

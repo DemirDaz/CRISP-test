@@ -31,7 +31,7 @@ html,body{
     background-image: url("res/LOGO.svg");
     background-repeat: no-repeat;
     height: 84.2px;
-    width: 500px;
+    width: 27%;
 }
 
     .nav{
@@ -643,7 +643,7 @@ html,body{
     .footer{
         
         background: #E0FF04;
-        height: 238px;
+        height: 27%;
         width:100%;
         
     }
@@ -675,7 +675,7 @@ html,body{
   
   
   .column {
-      width: 32%;
+    width: 30%;
     float:left;
     margin:auto;
     padding: 31px 50px 31px 50px;
@@ -699,7 +699,8 @@ html,body{
   }
   
 
-  .column a:hover {
+  .column a:hover{
+    
    
     text-decoration: underline;
     text-decoration-color:#E0FF04;
@@ -709,9 +710,166 @@ html,body{
 
   }
   
-  /* Clear floats after the columns */
+  /* Clear floats */
   .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  .footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+
+  }
+  .footer__logo{
+    position: relative;
+    left: 14%;
+    top: 20px;
+    /* margin-top: 40px; */
+    padding-bottom: 15px;
+    background-image: url(res/LOGO.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+    width: 21%;
+    height: 32%;
+  }
+
+  .footer__nav{
+    width: 100%;
+    height: 26%;
+    position: relative;
+    left: 10%;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+
+    
+  }
+
+  .footer .col{
+      flex:50%;
+  }
+
+  .footer__nav ul{
+    
+    display:flex;  
+    list-style:none;
+  }
+
+  .footer__nav li{
+    padding-right:55px;
+  }
+
+  .footer__nav a{
+    color:#000000;
+    text-decoration: none;
+  }
+
+  .footer__nav li:hover{
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    text-decoration-line: solid;
+    text-underline-offset: 4px;
+    color:#000000;
+
+  }
+
+  .footer__form{
+    
+    margin-top: -4%;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.07em;
+    display: flex;
+    justify-content: flex-end;
+    color: #000000;
+    padding-right: 13%;
+    
+    
+  }
+
+  .footer__form input[type=text] {
+    border:none;
+    outline:none;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom:12px;
+      margin-top:12px;
+      font-size:20px;
+      vertical-align: middle;
+  }
+
+  input[type=checkbox] {
+   
+    border: 1px solid #ffffff !important;
+    margin-left:0px;
+   
+  
+    
+  }
+
+  input[type="checkbox"]:checked + .check:before{
+
+  }
+
+  .footer__form input[type=submit] {
+    background:transparent;
+    border:none;
+    outline:none;
+    cursor:hand;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    margin-top:-2%;
+    margin-left:-1%;
+    }
+
+  .footer__form label{
+    
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    letter-spacing: 0.07em;
+    
+    color: #000000;
+  }
+
+  #fcheckbox{
+    vertical-align: middle;
+  }
+
+  .check{
+    
+    font-size: 12px!important;
+    line-height: 14px!important;
+/* identical to box height */
+
+
+
   }
