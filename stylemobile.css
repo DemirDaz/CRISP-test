@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 767px) {
 html,body{
     width: 100%;
     position: relative;
@@ -12,36 +12,43 @@ html,body{
 }
 
 .header{
-    position:fixed;
-    z-index: 100;
-    top:-30;
-    background: #FFFFFF;
-    width: 100%;
-
-    height: auto;
+  position: fixed;
+  z-index: 100;
+  top: -30;
+  background: #FFFFFF;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
    
 }
 
 .logo{
-    position: relative;
-    left: 36.98%;
-    right: 36.98%;
-    top: 0.83%;
-    margin-top:40px;
-    padding-bottom:10px;
-    background-image: url("res/LOGO.svg");
-    background-repeat: no-repeat;
-    height: 84.2px;
-    width: 27%;
+  position: relative;
+  left: 0;
+  right: 0%;
+  top: -12px;
+  margin-top: 37px;
+  padding-bottom: -4px;
+  background-image: url(res/LOGO.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 175px;
+  height: 79px;
 }
 
     .nav{
-        background: #FFFFFF;
+    background: #FFFFFF;
     position: relative;
-    width:100%;
-    margin:auto;
-    top: 0.2%;
-    padding-bottom:45px;
+    width: 100%;
+    margin: auto;
+    top: -9px;
+    padding-bottom:  19px;
+   
 
     }
 
@@ -51,39 +58,44 @@ html,body{
   }
 
     .search{
-        position: relative;
-        top:101px;
-        left: 7.4%;
+      position: relative;
+      top: 98px;
+      left: 115px;
+      background-image: url(res/search-2903.svg);
+      background-size: 21px 21px;
+      background-repeat: no-repeat;
+      background-position: inherit;
+    }
+
+    .right__section{
+      position: relative;
+      top: -64px;
+      left: -113px;
        
-        background-image:url("res/search-2903.svg");
-        background-size:21px 21px;
-        background-repeat: no-repeat;
-        background-position:inherit;
-       
-        
-         
     }
 
     .right__section-likes{
-        position: absolute;
-        top:55%;
-        right: 11.04%;
-        background-image:url("res/wishlist.png");
-        background-size:auto;
-        background-repeat: no-repeat;
-        width: 28px;
-        height: 36px;
+      position: absolute;
+      top: 55%;
+      right: 51%;
+      background-image: url(res/wishlist.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 36px;
     }
 
     .right__section-cart{
-        position: absolute;
-        top:51%;
-        right: 8.14%;
-        background-image:url("res/cart.png");
-        background-size: auto;
-        background-repeat: no-repeat;
-        width: 27.24px;
-        height: 34.34px;
+      position: absolute;
+      /* top: 51%; */
+      top: 52%;
+      right: 42%;
+      /* right: 8.14%; */
+      background-image: url(res/cart.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      width: 27.24px;
+      height: 34.34px;
     }
 
    
@@ -94,17 +106,18 @@ html,body{
    
 
     .search__line{
-        font-family: 'Work Sans', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        width: 214px;
-        border: 0;
-        border-bottom: 2px solid gray;
-        outline: 0;
-        font-size: 1.3rem;
-        padding:0;
-        color: white;
-        background: transparent;
+      font-family: 'Work Sans', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      width: 115px;
+      /* margin: auto; */
+      border: 0;
+      border-bottom: 2px solid gray;
+      outline: 0;
+      font-size: 1.3rem;
+      padding: 0;
+      color: white;
+      background: transparent;
     }
 
     
@@ -132,59 +145,49 @@ html,body{
         font-family: 'Work Sans', sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 19px;
         color: #000000;
         /* identical to box height */
 
     }
     .nav__category{
-        position: absolute;
-        left: 16.72%;
-       /* right: 75.16%; */
-        top: 3.14%;
+      position: absolute;
+      left:20;
+        
+        
         
     }
     .nav__brand{
-        position: absolute;
-        left: 31.88%;
-       
-        top: 3.14%;
+      position: absolute;
+      left:155;
+      
         
     }
     .nav__collection{
-        position: absolute;
-        left: 45%;
-       
-        top: 3.14%;
+      position: absolute;
+      left:65;
+      top:35;
         
     }
     .nav__about{
-        position: absolute;
-        left: 60.94%;
-        
-        top: 3.14%;
+      position: absolute;
+      right: 65;
+      top:35;
         
     }
     .nav__shop{
-        position: absolute;
-        left: 75.73%;
+      position: absolute;
+     
+      right:20;
       
-        top: 3.14%;
-        bottom: 96.47%;
     }
 
-    .right__section{
-        position: absolute;
-        top:54%;
-        right: 15.44%;
-        
-       
-    }
+    
 
     .right__section-fix{
-        margin-left:10px;
-        margin-right:10px;
+        margin-left:5px;
+        margin-right:5px;
         font-size:13px;
     }
 
@@ -202,33 +205,34 @@ html,body{
 
     .section__1{
         position: relative;
-        top:19%;
-        background-image: url("res/photo1.jpg");
+        top: 19%;
+        background-image: url(res/photo1.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
-        margin-top:12px;
+        background-size: cover;
+        margin-top: 12px;
         height: 114%;
-        padding:0px;
-        margin-left:0px;
-        margin-right: 0px;
+        padding: 0px;
+        margin-left: -102px;
+        margin-right: 0;
         
     }
 
    
 
     .section__1 .splash{
-        position: absolute;
-        left: 49.32%;
-        margin-top:335px;
-        background-image: url("res/banner.png");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        width:765.38px;
-        height: 128.88px;
+      position: absolute;
+      left: 23.32%;
+      margin-top: 343px;
+      background-image: url(res/banner.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 351.38px;
+      height: 63;
+  }
        
+    
         
-        
-    }
+    
     
     .banner-text{
         position: absolute;
@@ -283,7 +287,7 @@ html,body{
         font-family: 'Work Sans';
         font-style: normal;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 18px;
         line-height: 16px;
 /* identical to box height, or 73% */
         letter-spacing: 0.2em;
@@ -330,17 +334,16 @@ html,body{
 
 
     .shop-clothes,.shop-clothes2{
-        
-       
-        width: 80%;
-        height: 450px;
-        position:relative;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin:auto;
-        margin-bottom:102px;
-        justify-content: space-between;
+      width: 80%;
+      height: auto;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 43px;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     
@@ -362,19 +365,20 @@ html,body{
         -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         
-        height: 450px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         display:none;
+        flex:50%;
         
     }
 
     .arrow-left{
         position: absolute;
-        top:72%;
+        top: 81.5%;
         left: 3%;
         background-image:url("res/arrow_left.svg");
         background-size: contain;
@@ -392,7 +396,7 @@ html,body{
 
     .arrow-right{
         position: absolute;
-        top:72%;
+        top: 81.5%;
         right: 3%;
         background-image:url("res/arrow_right.svg");
         background-size: contain;
@@ -409,7 +413,7 @@ html,body{
        
        
         position: absolute;
-        top: 34%;
+        top: 26.2%;
         left: 3%;
         background-image: url(res/arrow_left.svg);
         background-size: contain;
@@ -424,11 +428,11 @@ html,body{
 
     .arrow-right1{
         background:transparent;
-    border:none;
-    outline:none;
-    cursor:hand;
+        border:none;
+        outline:none;
+        cursor:hand;
         position: absolute;
-        top: 34%;
+        top: 26.2%;
         right: 3%;
         background-image:url("res/arrow_right.svg");
         background-size: contain;
@@ -440,16 +444,15 @@ html,body{
     }
 
     .wrap{
-        height: 68%;
-        width: 100%;
-        padding-bottom:40px;
+      height: 55%;
+      width: 100%;
     }
 
     .outfit-container img{
-        width:100%;
-        height: auto;
-        object-fit: contain;
-        max-width: 100%;
+      width: 90%;
+      height: 100%;
+      object-fit: contain;
+      max-width: 100%;
         
         
 
@@ -458,16 +461,17 @@ html,body{
     
 
     .outfit-container .product__like{
-      background-image:url('res/e_heart.svg');
+      background-image: url(res/e_heart.svg);
       background-repeat: no-repeat;
+      background-size: contain;
       position: absolute;
-      margin-left: 145px;
+      margin-left: -8px;
       
-      top:75%;
-      /* right: 100px; */
+      margin-top: 10px;
+      
       background-size: contain;
       width: 15px;
-      height: 18px; 
+      height: 18px;
       
     }
 
@@ -476,9 +480,9 @@ html,body{
         cursor: hand;
         background-repeat: no-repeat;
         position: absolute;
-        margin-left: 145px;
-        
-        top:75%;
+        margin-left: -8px;
+      
+        margin-top: 10px;
         /* right: 100px; */
         background-size: contain;
         width: 15px;
@@ -490,7 +494,7 @@ html,body{
         font-family: 'Work Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 19px;
         text-align: center;
         letter-spacing: 0.07em;
@@ -502,7 +506,7 @@ html,body{
         font-family: 'Work Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 19px;
         color: #999999;
         margin:2.5px auto;
@@ -511,7 +515,7 @@ html,body{
         font-family: 'Work Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 19px;
         color: #000000;
         margin:2.5px auto;
@@ -520,7 +524,7 @@ html,body{
         font-family: 'Work Sans';
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 19px;
         color:black;
         margin:7.5px auto;
@@ -533,36 +537,36 @@ html,body{
 
 
     .section__categories1,.section__categories2{
-        width:120.2%;
-        height: auto;
-        max-width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin:auto;
-        text-align: center;
+      width: 120.2%;
+      height: auto;
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      text-align: center;
         
     }
 
     
 
     .category{
-        position: relative;
-        width:27.9%;
-        margin: 10px;
-        background:#000000;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        vertical-align: middle;
+      position: relative;
+      width: 100%;
+      margin: 10px;
+      background: #000000;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      vertical-align: middle;
     }
 
     .category:hover{
         position: relative;
-        width:27.9%;
+        width:100%;
         margin: 10px;
         background:#E0FF04;
         display: flex;
@@ -683,23 +687,23 @@ html,body{
     .section__instagram{
         position:relative;
         width:100%;
-        height: auto;
+        height: 300px;
         margin:50px 0;
         padding:0;
         
     }
 
     .section__instagram img{
-        object-fit:fill;
-        width: 100%;
-        height: auto;
-        max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+      height: 300;
+      max-width: 100%;
     }
 
     .footer{
         
         background: #E0FF04;
-        height: 27%;
+        height: auto;
         width:100%;
         
     }
@@ -715,7 +719,7 @@ html,body{
     display: none;
     position: absolute;
     background-color: #ffffff;
-    width: 27%;
+    width: 60%;
     left: 29%;
     z-index: 1;
     -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
@@ -736,7 +740,7 @@ html,body{
     width: 30%;
     float:left;
     margin:auto;
-    padding: 31px 50px 31px 50px;
+    padding: 14px 26px 0px 32px;
     background-color: rgb(255, 255, 255);
     height: 40%;
   }
@@ -746,7 +750,7 @@ html,body{
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 250%;
     float: none;
     color: black;
@@ -785,31 +789,33 @@ html,body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    align-content: center;
+    align-content: space-around;
+    flex-direction: column;
     
 
   }
   .footer__logo{
     position: relative;
-    left: 14%;
-    top: 20px;
+    left: 2%;
+    top: 24px;
     /* margin-top: 40px; */
     padding-bottom: 15px;
     background-image: url(res/LOGO.svg);
     background-repeat: no-repeat;
     background-size: contain;
     max-width: 100%;
-    width: 21%;
-    height: 32%;
-  }
-
+    width: 100%;
+    height: 30;
+}
+  
   .footer__nav{
     width: 100%;
     height: 26%;
     position: relative;
-    left: 10%;
+    top: 20;
+    left: 0;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -821,13 +827,17 @@ html,body{
   }
 
   .footer .col{
-      flex:50%;
+      flex:100%;
   }
 
   .footer__nav ul{
-    
-    display:flex;  
-    list-style:none;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .footer__nav li{
@@ -850,18 +860,22 @@ html,body{
 
   .footer__form{
     
-    margin-top: -4%;
+    margin-top: 20;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
     letter-spacing: 0.07em;
     display: flex;
-    justify-content: flex-end;
+    /* margin: auto; */
     color: #000000;
-    padding-right: 13%;
+    /* margin: auto; */
+    padding: 10;
+    /* padding-right: 10; */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     
     
   }
@@ -892,32 +906,37 @@ html,body{
 
   
   .footer__form input[type=submit] {
-    background:transparent;
-    border:none;
-    outline:none;
-    cursor:hand;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: hand;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     text-align: left;
-    margin-top:-2%;
-    margin-left:-1%;
+    /* margin: auto; */
+    /* margin-top: -2%; */
+    /* margin-left: -1%; */
+    width: 100%;
+    /* margin: auto; */
+    left: 130;
+    position: relative;
     }
 
   .footer__form label{
-    
-    font-family: Work Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    
-    letter-spacing: 0.07em;
-    
-    color: #000000;
+        /* text-align: center; */
+        position: relative;
+        left: 30;
+        /* margin: auto; */
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.07em;
+        color: #000000;
   }
 
   #fcheckbox{
